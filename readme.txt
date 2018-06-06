@@ -51,3 +51,4 @@ Git的分支是与众不同的，无论创建、切换和删除分支，Git在1�
 git checkout -b dev=git branch dev+git checkout dev
 git branch 查看分支
 
+git log 过长 按Q退出
