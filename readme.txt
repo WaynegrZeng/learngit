@@ -11,10 +11,13 @@ git diff readme.txt 查看修改的内容
 
 ctrl+d 可以退出未完成的指令
 
-保存不同的版本需要add之后再commit
+原理： 将修改add到缓存区，再commit到分支上，因此如果修改后没有add，那么commit了也没用，就白做了
 
 git log 打开版本信息
 git log --pretty=oneline 打开简略的版本信息
 
-git reset --hard HEAD^(or HEAD~1) 版本回退
+git reset --hard HEAD^(or HEAD~1) 版本回退，并且此时log将不再显示该时点后续的版本序列号
 
+git reflog 查看历史版本信息（帮助回到最新版本）
+
+git checkout -- readme.txt 撤销修改，回到最近的暂存区或版本库的状态
