@@ -10,3 +10,11 @@ git status 查看仓库与上一次commit时对比的状态
 git diff readme.txt 查看修改的内容
 
 ctrl+d 可以退出未完成的指令
+
+保存不同的版本需要add之后再commit
+
+git log 打开版本信息
+git log --pretty=oneline 打开简略的版本信息
+
+git reset --hard HEAD^(or HEAD~1) 版本回退
+
